@@ -1,1 +1,1 @@
-# KWK-2025-DataVis
+# KWK-2025-DataViS
