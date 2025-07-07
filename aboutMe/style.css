@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+body {
+  font-family: 'Jersey 10', sans-serif;
+  margin:0px;
+  width: 100vw;
+  height: 100vh;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: antiquewhite;
+}
+
+.container{
+    text-align: center;
+}
+
+.container:hover{
+  cursor: pointer;
+  background-color: rgba(255, 255, 0, 0.306);
+  border-radius: 40px;
+  padding: 20px;
+}
+
+.container:hover .main-folder{
+  scale:1.2;
+}
+
+.main-folder{
+    width:10vw;
+    height:auto;
+    padding:20px;
+}
+
+.main-folder:hover{
+  
+}
+
+.main-title{
+    font-size:2em;
+}
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.popup-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    height: 50vh;
+    background-color: white;
+    border: solid 4px black;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.popup-header {
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.popup-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    font-size: 2em;;
+}
+.buttons{
+    display:flex;
+    justify-content: space-between;
+}
+.close-btn {
+    background: red;
+    border-radius: 50%;
+    color:white;
+    border: 3px solid black;
+    font-size: 20px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right:5px;
+}
+
+
+.expand-btn {
+    background: rgb(8, 171, 24);
+    border-radius: 50%;
+    color:white;
+    border: 3px solid black;
+    font-size: 20px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-btn:hover, .expand-btn:hover{
+    scale:1.2;
+}
+
+.popup-content {
+    padding: 20px;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.folder-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.folder-container:hover{
+    scale:1.1;
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: rgba(255, 255, 0, 0.306);
+}
+.folder-icon{
+    width:60%;
+    height:auto;
+}
+
+.folder-title{
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+/********* secondary popup styles *******/
+.secondary-popup {
+    z-index: 2000; 
+    background-color: transparent; 
+    pointer-events: none; 
+}
+
+.secondary-window {
+    width: 40vw;
+    height: 40vh;
+    background-color: #f8f8f8;
+    pointer-events: auto; 
+}
+.small-popup-content{
+    padding-left:30px;
+     padding-right:30px;
+}
+.small-popup-content h3{
+    font-size:3em;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+.small-popup-content p, .small-popup-content ul{
+    font-size:1.5em;
+}

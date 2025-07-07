@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamie</title>
+    <link rel="icon" type="image/x-icon" href="./icons/folder.png">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+ <img src="./icons/folder.png" alt="" class="main-folder" id="folderIcon"/>
+        <div class="main-title">jamie :)</div>
+    </div>
+       
+    
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-window">
+            <div class="popup-header">
+                 <div class="buttons">
+                    <button class="close-btn" id="closeBtn">&times;</button>
+                    <button class="expand-btn" id="expandBtn">&plus;</button>
+                </div>
+                <span class="popup-title">All about me</span>
+                <div></div> 
+            </div>
+            <div class="popup-content">
+                <div class="folder-container info">
+                    <img src="./icons/folder.png" alt="" class="folder-icon">
+                    <div class="subheader folder-title">info</div>
+                </div>
+                <div class="folder-container bio">
+                    <img src="./icons/folder.png" alt="" class="folder-icon">
+                    <div class="subheader folder-title">bio</div>
+                </div>
+                <div class="folder-container funfacts">
+                    <img src="./icons/folder.png" alt="" class="folder-icon">
+                    <div class="subheader folder-title">fun facts!</div>
+                </div>
+                <div class="folder-container education">
+                    <img src="./icons/folder.png" alt="" class="folder-icon">
+                    <div class="subheader folder-title">education</div>
+                </div>
+                <div class="folder-container coding">
+                    <img src="./icons/folder.png" alt="" class="folder-icon">
+                    <div class="subheader folder-title">coding journey</div>
+                </div>
+                <div class="folder-container love">
+                    <img src="./icons/folder.png" alt="" class="folder-icon">
+                    <div class="subheader folder-title">things i love</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-overlay secondary-popup" id="secondaryPopup">
+        <div class="popup-window secondary-window">
+            <div class="popup-header">
+                <div class="buttons">
+                    <button class="close-btn" id="secondaryCloseBtn">&times;</button>
+                </div>
+                <span class="popup-title" id="secondaryTitle">Folder Content</span>
+                <div></div> 
+            </div>
+            <div class="popup-content" id="secondaryContent">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
